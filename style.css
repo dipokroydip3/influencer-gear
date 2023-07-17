@@ -1,0 +1,100 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+:root{
+      --primary-color: black;
+      --p-font-size: 18px;
+      --p-text-color: rgb(164, 164, 164);
+}
+header nav{
+      width: 85%;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+}
+nav ul{
+      display: flex;
+      list-style: none;
+}
+ul li{
+      padding: 0 30px;
+}
+li a{
+      text-decoration: none;
+      font-size: var(--p-font-size);
+}
+ul .nav-icons{
+      margin: auto;
+      padding: 0 20px;
+      cursor: pointer;
+      font-size: 20px;
+
+}
+nav .bars-icons{
+      display: none;
+      margin: auto;
+      padding: 0 10px; 
+      font-size: 20px;   
+}
+.website-name{
+      font-size: 25px;
+      font-weight: bold;
+}
+.row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      width: 85%;
+      margin: 30px auto;
+}
+.hero-heading{
+      font-size: 3.5em;
+}
+.hero-images{
+      background: url('images/Circledesign.svg');
+}
+.hero-p{
+      margin: 10px 00;
+}
+.preebook{
+      background-color: lightcoral;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+}
+
+
+      /* media quearys */
+
+@media screen and (max-width: 576px){
+     
+      nav ul{
+            display: none;
+      }
+      nav .bars-icons{
+            display: block;
+            margin: auto 0px;
+            padding: 0;
+      }
+      .row{
+            flex-direction: column-reverse;
+            
+      }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+      .row{
+            flex-direction: column-reverse;   
+      }
+      ul li{
+            display: none;
+      }
+}
