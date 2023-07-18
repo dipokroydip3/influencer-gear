@@ -61,6 +61,7 @@ nav .bars-icons{
 }
 .hero-images{
       background: url('images/Circledesign.svg');
+      background-repeat: no-repeat;
 }
 .hero-p{
       margin: 10px 0;
