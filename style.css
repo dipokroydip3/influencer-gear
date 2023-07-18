@@ -45,12 +45,14 @@ nav .bars-icons{
       font-size: 25px;
       font-weight: bold;
 }
-.row{
+
+#hero .row{ 
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 70px;
       width: 85%;
+      height: 75vh;
       margin: 30px auto;
 }
 .hero-heading{
@@ -71,6 +73,99 @@ nav .bars-icons{
       cursor: pointer;
 }
 
+            /* sponser section */
+
+/* #sponser .row{
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      border-top: 0.5px solid rgb(230, 230, 230);
+      border-bottom: 0.5px solid rgb(230, 230, 230);
+      margin: 80px auto;
+      flex-wrap: wrap;
+      padding: 20px 0;
+} */
+
+#sponser .sponser-row{
+      width: 85%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
+      border-top: 1px solid rgb(207, 207, 207);
+      border-bottom: 1px solid rgb(207, 207, 207);
+}
+            /* collection section start */
+#collection .item-container{
+      width: 85%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit , minmax(350px, 1fr));
+      gap: 20px;
+      justify-content: space-between;
+}
+
+#collection .item-container .item{
+      box-shadow: 20px 20px 60px #bebebe,
+      -20px -20px 60px #ffffff;
+      border-radius: 5px;
+
+}
+.items-heading{
+      text-align: center;
+      margin: 50px 0;
+      font-size: 30px;
+}
+.item-container .item img{
+      width: 100%;
+      padding: 10px; 
+}
+.content{
+      padding: 10px;
+}
+.content i{
+      color: orange;
+      font-size: 12px;
+}
+.review{
+      font-size: 14px;
+      margin: 0 5px;
+}
+.item-details{
+      font-size: 14px;
+}
+
+.feature-row{
+      width: 85%;
+      margin: auto;
+      display: grid;
+      gap: 50px;
+      align-items: center;
+      margin: 100px auto;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.feature-img img{
+      width: 100%;
+}
+.feature-p{
+      margin: 10px 0;
+}
+.join-now{
+      background-color: lightcoral;
+      border: none;
+      color: white;
+      padding: 8px 20px;
+      margin: 20px 0;
+}
+
+#footer{
+      background-color: black;
+
+}
+.footer-row{
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+}
 
       /* media quearys */
 
