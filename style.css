@@ -5,9 +5,9 @@
       font-family: 'Poppins', sans-serif;
 }
 :root{
-      --primary-color: black;
+      --primary-color: lightcoral;
       --p-font-size: 18px;
-      --p-text-color: rgb(164, 164, 164);
+      --p-text-color: rgb(33, 33, 33);
 }
 header nav{
       width: 85%;
@@ -27,6 +27,8 @@ ul li{
 li a{
       text-decoration: none;
       font-size: var(--p-font-size);
+      color: var(--p-text-color);
+      font-weight: 400;
 }
 ul .nav-icons{
       margin: auto;
@@ -46,13 +48,12 @@ nav .bars-icons{
       font-weight: bold;
 }
 
-#hero .row{ 
+#hero .hero-row{ 
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 70px;
       width: 85%;
-      height: 75vh;
       margin: 30px auto;
 }
 .hero-heading{
@@ -62,7 +63,8 @@ nav .bars-icons{
       background: url('images/Circledesign.svg');
 }
 .hero-p{
-      margin: 10px 00;
+      margin: 10px 0;
+      color: var(--p-text-color);
 }
 .preebook{
       background-color: lightcoral;
@@ -88,12 +90,15 @@ nav .bars-icons{
 
 #sponser .sponser-row{
       width: 85%;
-      margin: 50px auto;
+      margin: 100px auto;
+      padding: 30px 0;
       display: grid;
       grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
       border-top: 1px solid rgb(207, 207, 207);
       border-bottom: 1px solid rgb(207, 207, 207);
+      gap: 50px;
 }
+
             /* collection section start */
 #collection .item-container{
       width: 85%;
@@ -105,10 +110,24 @@ nav .bars-icons{
 }
 
 #collection .item-container .item{
-      box-shadow: 20px 20px 60px #bebebe,
-      -20px -20px 60px #ffffff;
-      border-radius: 5px;
-
+      box-shadow: 5px 5px 10px #cacaca,
+      -5px -5px 10px #f6f6f6;
+}
+.btn{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+}
+.item-btn{
+      margin: 50px 0;
+      padding: 8px 15px;
+      font-size: 16px;
+      border: none;
+      background-color: white;
+      color: var(--primary-color);
+      cursor: pointer;
 }
 .items-heading{
       text-align: center;
@@ -155,6 +174,7 @@ nav .bars-icons{
       color: white;
       padding: 8px 20px;
       margin: 20px 0;
+      cursor: pointer;
 }
 
 #footer{
@@ -165,6 +185,16 @@ nav .bars-icons{
       color: white;
       text-align: center;
       padding: 50px 0;
+}
+.footer-heading{
+      margin: 15px 0;
+}
+.footer-icons{
+      margin: 20px 0;
+}
+.footer-icons i{
+      margin: 0 10px;
+      font-size: 20px;
 }
 
       /* media quearys */
@@ -179,14 +209,14 @@ nav .bars-icons{
             margin: auto 0px;
             padding: 0;
       }
-      .row{
+      .hero-row{
             flex-direction: column-reverse;
             
       }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-      .row{
+      .hero-row{
             flex-direction: column-reverse;   
       }
       ul li{
